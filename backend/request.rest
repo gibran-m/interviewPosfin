@@ -1,0 +1,25 @@
+GET http://localhost:5000/barang
+
+###
+GET http://localhost:5000/barang/2
+###
+
+POST http://localhost:5000/barang
+Content-Type: application/json
+
+{
+    "nama_peminjam" : "Bu aminah",
+    "barang_dipinjam" : "Ember Kecil"
+}
+
+###
+PATCH http://localhost:5000/barang/1
+Content-Type: application/json
+
+{
+    "nama_peminjam" : "Pak Budi",
+    "barang_dipinjam" : "Pisau"
+}
+
+###
+DELETE http://localhost:5000/barang/3
